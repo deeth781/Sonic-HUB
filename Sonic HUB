@@ -320,3 +320,11 @@ end)
 MainSection:NewButton("Infinity Yield", "NONE", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
+
+local Tab1 = Window:NewTab("")
+
+local Section1 = Tab1:NewSection("SECRET TEST TOGGLE")
+
+Section1:NewKeybind("Toggle ui", "Toggle the ui yes", Enum.KeyCode.F6, function()
+    Library:ToggleUI()
+end)
