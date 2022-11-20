@@ -68,7 +68,7 @@ MainSection:NewButton("Teleport Player", "NONE", function()
 end)
 
 
-MainSection:NewButton("Esp Player"NONE", function()
+MainSection:NewButton("Esp Player", "NONE", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/giLS79r6"))()
 end)
 
