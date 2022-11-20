@@ -324,8 +324,9 @@ local Main = Window:NewTab("MISC")
 local MainSection = Main:NewSection("Misc Exploit List")
 
 MainSection:NewButton("Server Hop", "NONE", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/iySVbDQ2"))(
+   loadstring(game:HttpGet("https://pastebin.com/raw/iySVbDQ2"))()
 end)
+
 
 local Tab1 = Window:NewTab("")
 
