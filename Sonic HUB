@@ -49,40 +49,9 @@ end)
 local CreditSection = Credit:NewSection("Game List")
 
 
-CreditSection:NewButton("-- Slap Bettle", "NONE", function()
+CreditSection:NewButton("-- Work All Game", "NONE", function()
     print("Clicked")
 end)
-
-
-CreditSection:NewButton("-- Ability Wars", "NONE", function()
-    print("Clicked")
-end)
-
-
-CreditSection:NewButton("-- Titans Bettlegrounds", "NONE", function()
-    print("Clicked")
-end)
-
-
-CreditSection:NewButton("-- Flag Wars", "NONE", function()
-    print("Clicked")
-end)
-
-
-CreditSection:NewButton("-- Be a Parkour Ninja", "NONE", function()
-    print("Clicked")
-end)
-
-
-CreditSection:NewButton("-- Elemental Bettlegrounds", "NONE", function()
-    print("Clicked")
-end)
-
-
-CreditSection:NewButton("-- Murder Mystery 2", "NONE", function()
-    print("Clicked")
-end)
-
 
 local Main = Window:NewTab("COMBAT")
 local MainSection = Main:NewSection("Combat Exploit List")
@@ -104,7 +73,7 @@ end)
 
 
 MainSection:NewButton("Esp Player", "NONE", function()
-   loadstring(game:HttpGet("https://pastebin.com/raw/giLS79r6"))()
+   loadstring(game:HttpGet("https://pastebin.com/raw/VEe5gP5z"))()
 end)
 
 local Main = Window:NewTab("PLAYER")
