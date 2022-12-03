@@ -79,8 +79,11 @@ MainSection:NewButton("Teleport Player", "NONE", function()
     loadstring(game:HttpGet("https://gist.githubusercontent.com/DagerFild/b4776075a0d26ef04394133ee6bd2081/raw/0ed51ac94057d2d9a9f00e1b037b9011c76ca54a/tpGUI", true))()
 end)
 
+MainSection:NewButton("Esp Player ( BOX )", "NONE", function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/zKjj0TQD"))()
+end)
 
-MainSection:NewButton("Esp Player", "NONE", function()
+MainSection:NewButton("Esp Player ( GEEEN BODY )", "NONE", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/xRF1KCTa"))()
 end)
 
