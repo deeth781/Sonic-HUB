@@ -57,8 +57,16 @@ local Main = Window:NewTab("COMBAT")
 local MainSection = Main:NewSection("Combat Exploit List")
 
 
-MainSection:NewButton("Hit Box ( Invisible )", "NONE", function()
-    _G.HeadSize = 30 _G.Disabled = true game:GetService('RunService').RenderStepped:connect(function() if _G.Disabled then for i,v in next, game:GetService('Players'):GetPlayers() do if v.Name ~= game:GetService('Players').LocalPlayer.Name then pcall(function() v.Character.HumanoidRootPart.Size = Vector3.new(30,30,30) v.Character.HumanoidRootPart.Transparency = 0.8 v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really white") v.Character.HumanoidRootPart.Material = "Neon" v.Character.HumanoidRootPart.CanCollide = false end) end end end end)
+MainSection:NewButton("Hit Box (SMALL) (Invisible)", "NONE", function()
+    _G.HeadSize = 20 _G.Disabled = true game:GetService('RunService').RenderStepped:connect(function() if _G.Disabled then for i,v in next, game:GetService('Players'):GetPlayers() do if v.Name ~= game:GetService('Players').LocalPlayer.Name then pcall(function() v.Character.HumanoidRootPart.Size = Vector3.new(20,20,20) v.Character.HumanoidRootPart.Transparency = 1 v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really white") v.Character.HumanoidRootPart.Material = "Neon" v.Character.HumanoidRootPart.CanCollide = false end) end end end end)
+end)
+
+MainSection:NewButton("Hit Box (MEDIUM) (Invisible)", "NONE", function()
+    _G.HeadSize = 30 _G.Disabled = true game:GetService('RunService').RenderStepped:connect(function() if _G.Disabled then for i,v in next, game:GetService('Players'):GetPlayers() do if v.Name ~= game:GetService('Players').LocalPlayer.Name then pcall(function() v.Character.HumanoidRootPart.Size = Vector3.new(30,30,30) v.Character.HumanoidRootPart.Transparency = 1 v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really white") v.Character.HumanoidRootPart.Material = "Neon" v.Character.HumanoidRootPart.CanCollide = false end) end end end end)
+end)
+
+MainSection:NewButton("Hit Box (LARGE) (Invisible)", "NONE", function()
+    _G.HeadSize = 40 _G.Disabled = true game:GetService('RunService').RenderStepped:connect(function() if _G.Disabled then for i,v in next, game:GetService('Players'):GetPlayers() do if v.Name ~= game:GetService('Players').LocalPlayer.Name then pcall(function() v.Character.HumanoidRootPart.Size = Vector3.new(40,40,40) v.Character.HumanoidRootPart.Transparency = 1 v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really white") v.Character.HumanoidRootPart.Material = "Neon" v.Character.HumanoidRootPart.CanCollide = false end) end end end end)
 end)
 
 
@@ -73,7 +81,7 @@ end)
 
 
 MainSection:NewButton("Esp Player", "NONE", function()
-   loadstring(game:HttpGet("https://pastebin.com/raw/VEe5gP5z"))()
+   loadstring(game:HttpGet("https://pastebin.com/raw/T5btZ8nX"))()
 end)
 
 local Main = Window:NewTab("PLAYER")
