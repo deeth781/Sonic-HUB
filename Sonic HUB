@@ -81,7 +81,7 @@ end)
 
 
 MainSection:NewButton("Esp Player", "NONE", function()
-   loadstring(game:HttpGet("https://pastebin.com/raw/T5btZ8nX"))()
+   loadstring(game:HttpGet("https://pastebin.com/raw/xRF1KCTa"))()
 end)
 
 local Main = Window:NewTab("PLAYER")
