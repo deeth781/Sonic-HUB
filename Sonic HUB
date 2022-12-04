@@ -281,7 +281,7 @@ MainSection:NewButton("Super Fast Attack ( BLOX FRUIT ) ( RISK )", "NONE", funct
     loadstring(game:HttpGet("https://raw.githubusercontent.com/trumpxl/name/main/superfastattack"))()
 end)
 
-MainSection:NewButton("Auto Collect Confetti ( BLOX FRUIT ?", "NONE", function()
+MainSection:NewButton("Auto Collect Confetti ( BLOX FRUIT )", "NONE", function()
     _G.AutoConfetti = true -- Dont delete this
 loadstring(game:HttpGet("https://pastebin.com/raw/K8jMXmQJ"))()
 end)
