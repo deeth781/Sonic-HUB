@@ -277,6 +277,9 @@ MainSection:NewButton("Auto Click", "NONE", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/VxjDiyVr"))()
 end)
 
+MainSection:NewButton("Super Fast Attack", "NONE", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/trumpxl/name/main/superfastattack"))()
+end)
 
 local Main = Window:NewTab("WORLD")
 local MainSection = Main:NewSection("World Exploit List")
