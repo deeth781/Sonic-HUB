@@ -277,6 +277,10 @@ MainSection:NewButton("Auto Click", "NONE", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/VxjDiyVr"))()
 end)
 
+MainSection:NewButton("Anti KnockBack", "NONE", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/TrcZKAkh"))()
+end)
+
 MainSection:NewButton("Super Fast Attack ( BLOX FRUIT ) ( RISK )", "NONE", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/trumpxl/name/main/superfastattack"))()
 end)
