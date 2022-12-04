@@ -277,7 +277,7 @@ MainSection:NewButton("Auto Click", "NONE", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/VxjDiyVr"))()
 end)
 
-MainSection:NewButton("Super Fast Attack ( blox fruit )", "NONE", function()
+MainSection:NewButton("Super Fast Attack ( blox fruit ) ( RISK )", "NONE", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/trumpxl/name/main/superfastattack"))()
 end)
 
