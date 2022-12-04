@@ -316,6 +316,9 @@ MainSection:NewButton("Server Hop", "NONE", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/iySVbDQ2"))()
 end)
 
+MainSection:NewButton("Anti Afk", "NONE", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringypVvhJBq4QNz", true))()
+end)
 
 local Tab1 = Window:NewTab("")
 
