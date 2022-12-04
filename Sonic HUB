@@ -315,3 +315,7 @@ local Section1 = Tab1:NewSection("SECRET TEST TOGGLE")
 Section1:NewKeybind("Toggle ui", "Toggle the ui yes", Enum.KeyCode.F6, function()
     Library:ToggleUI()
 end)
+
+Section1:NewButton("Ability Wars Gui", "NONE", function()
+    loadstring(game:HttpGet("https://paste.ee/r/Wo5Kj"))()
+end)
