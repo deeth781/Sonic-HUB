@@ -332,8 +332,12 @@ MainSection:NewButton("Anti Afk", "NONE", function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringypVvhJBq4QNz", true))()
 end)
 
-MainSection:NewButton("Anti Lag", "NONE", function()
+MainSection:NewButton("Low Graphick", "NONE", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/RM3vpzEg"))()
+end)
+
+MainSection:NewButton("Graphick RTX", "NONE", function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/beJhkj3m"))()
 end)
 
 local Tab1 = Window:NewTab("")
