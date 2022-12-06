@@ -1,5 +1,5 @@
 game:GetService("StarterGui"):SetCore("SendNotification",{
-                Title = "#--INFORMATION--#";
+                Title = "#--[INFORMATION]--#";
                 Text = "Script Made By Sonic";
                 Duration = 10;
             })
@@ -330,6 +330,10 @@ end)
 
 MainSection:NewButton("Anti Afk", "NONE", function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringypVvhJBq4QNz", true))()
+end)
+
+MainSection:NewButton("Anti Lag", "NONE", function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/RM3vpzEg"))()
 end)
 
 local Tab1 = Window:NewTab("")
