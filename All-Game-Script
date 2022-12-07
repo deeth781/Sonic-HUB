@@ -293,9 +293,8 @@ MainSection:NewButton("Super Fast Attack ( BLOX FRUIT ) ( RISK )", "NONE", funct
     loadstring(game:HttpGet("https://raw.githubusercontent.com/trumpxl/name/main/superfastattack"))()
 end)
 
-MainSection:NewButton("Auto Collect Confetti ( BLOX FRUIT )", "NONE", function()
-    _G.AutoConfetti = true -- Dont delete this
-loadstring(game:HttpGet("https://pastebin.com/raw/K8jMXmQJ"))()
+MainSection:NewButton("Auto farm Fruit LVL ( FRUIT BETTLEGROUND )", "NONE", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/PW7PEu6Q"))()
 end)
 
 
@@ -338,6 +337,10 @@ end)
 
 MainSection:NewButton("Graphick RTX", "NONE", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/beJhkj3m"))()
+end)
+
+MainSection:NewButton("Translate all Language", "NONE", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/b6Y3GTQG"))()
 end)
 
 local Tab1 = Window:NewTab("")
