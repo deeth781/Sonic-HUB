@@ -339,6 +339,16 @@ MainSection:NewButton("Graphick RTX", "NONE", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/beJhkj3m"))()
 end)
 
+MainSection:NewButton("Anti Void", "NONE", function()
+   local baseplate    = Instance.new("Part")
+	baseplate.Parent   = workspace
+	baseplate.Name = "BasePlatform"
+	baseplate.Transparency = 0.5
+	baseplate.Size     = Vector3.new(800000,20,800000) -- change size
+	baseplate.Anchored = true
+	baseplate.Position = Workspace.Lobby["Middle Room"].Floor.Base.Union.Position + Vector3.new(0,-110,0)
+end)
+
 MainSection:NewButton("Translate all Language", "NONE", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/b6Y3GTQG"))()
 end)
