@@ -268,15 +268,6 @@ MainSection:NewButton("Fly Menu", "NONE", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/85csexBH"))()
 end)
 
-
-MainSection:NewButton("No Cooldown ( FLUXUS )", "NONE", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/HzanLBNs"))()
-end)
-
-MainSection:NewButton("No Cooldown ( HYDROGEN )", "NONE", function()
-    loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\75\117\69\114\120\115\90\110\10"))()
-end)
-
 MainSection:NewButton("Set Spawn + Tp", "NONE", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/1dM3mAJq'))()
 end)
@@ -287,14 +278,6 @@ end)
 
 MainSection:NewButton("Anti KnockBack", "NONE", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/TrcZKAkh"))()
-end)
-
-MainSection:NewButton("Super Fast Attack ( BLOX FRUIT ) ( RISK )", "NONE", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/trumpxl/name/main/superfastattack"))()
-end)
-
-MainSection:NewButton("Auto farm Fruit LVL ( FRUIT BETTLEGROUND )", "NONE", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/PW7PEu6Q"))()
 end)
 
 
@@ -353,14 +336,48 @@ MainSection:NewButton("Translate all Language", "NONE", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/b6Y3GTQG"))()
 end)
 
-local Tab1 = Window:NewTab("")
+local Main = Window:NewTab("OTHER GAME")
+local MainSection = Main:NewSection("[↓↓] FRUIT BETTLEGROUND [↓↓]")
 
+MainSection:NewButton("Spawn Safe Platform", "NONE", function()
+    local baseplate    = Instance.new("Part")
+	baseplate.Parent   = workspace
+	baseplate.Name = "BasePlatform"
+	baseplate.Transparency = 1
+	baseplate.Size     = Vector3.new(5,1,5) -- change size
+	baseplate.Anchored = true
+	baseplate.Position = Workspace.Lobby["Middle Room"].Floor.Base.Union.Position + Vector3.new(0,110,0)
+end)
+
+MainSection:NewButton("Auto farm Fruit ( SPAWN PLAT FRIST )", "NONE", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/uhZag4tH"))()
+end)
+
+local MainSection = Main:NewSection("[↓↓] BLOX FRUIT [↓↓]")
+
+MainSection:NewButton("Super Fast Attack ( RISK )", "NONE", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/trumpxl/name/main/superfastattack"))()
+end)
+
+local MainSection = Main:NewSection("[↓↓] TITANS BETTLEGROUND [↓↓]")
+
+MainSection:NewButton("No Cooldown ( FLUXUS )", "NONE", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/HzanLBNs"))()
+end)
+
+MainSection:NewButton("No Cooldown ( HYDROGEN )", "NONE", function()
+    loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\75\117\69\114\120\115\90\110\10"))()
+end)
+
+local MainSection = Main:NewSection("[↓↓] ABILITY WARS [↓↓]")
+
+MainSection:NewButton("Ability Wars Gui", "NONE", function()
+    loadstring(game:HttpGet("https://paste.ee/r/Wo5Kj"))()
+end)
+
+local Tab1 = Window:NewTab("")
 local Section1 = Tab1:NewSection("SECRET TEST TOGGLE")
 
 Section1:NewKeybind("Toggle ui", "Toggle the ui yes", Enum.KeyCode.F6, function()
     Library:ToggleUI()
-end)
-
-Section1:NewButton("Ability Wars Gui", "NONE", function()
-    loadstring(game:HttpGet("https://paste.ee/r/Wo5Kj"))()
 end)
