@@ -359,8 +359,12 @@ end)
 
 local MainSection = Main:NewSection("[↓↓] BLOX FRUIT [↓↓]")
 
-MainSection:NewButton("Super Fast Attack ( RISK )", "NONE", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/trumpxl/name/main/superfastattack"))()
+MainSection:NewButton("Super Fast Attack", "NONE", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/YCFGUmFH"))()
+end)
+
+MainSection:NewButton("Super Fast Attack + auto click", "NONE", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/0WyG0Sf0"))()
 end)
 
 local MainSection = Main:NewSection("[↓↓] TITANS BETTLEGROUND [↓↓]")
