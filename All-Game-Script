@@ -1,7 +1,8 @@
 game:GetService("StarterGui"):SetCore("SendNotification",{
-                Title = "#--[INFORMATION]--#";
+                Title = "#--[CREDITS]--#";
                 Text = "Script Made By Sonic";
-                Duration = 10;
+                Duration = math.huge;
+                Button1 = "Okay"
             })
             
 --Gui
@@ -82,6 +83,9 @@ MainSection:NewButton("Kill Aura", "NONE", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/ibYN5TrH"))()
 end)
 
+MainSection:NewButton("Aimbot Range (300)", "NONE", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/PZhxvsme"))()
+end)
 
 MainSection:NewButton("Teleport Player", "NONE", function()
     loadstring(game:HttpGet("https://gist.githubusercontent.com/DagerFild/b4776075a0d26ef04394133ee6bd2081/raw/0ed51ac94057d2d9a9f00e1b037b9011c76ca54a/tpGUI", true))()
