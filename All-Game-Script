@@ -95,8 +95,8 @@ MainSection:NewButton("Esp Player ( BOX )", "NONE", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/zKjj0TQD"))()
 end)
 
-MainSection:NewButton("Esp Player ( GEEEN BODY )", "NONE", function()
-   loadstring(game:HttpGet("https://pastebin.com/raw/xRF1KCTa"))()
+MainSection:NewButton("Esp Player", "NONE", function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/cCCX66GY"))()
 end)
 
 local Main = Window:NewTab("PLAYER")
