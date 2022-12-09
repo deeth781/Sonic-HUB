@@ -318,6 +318,10 @@ MainSection:NewButton("Anti Afk", "NONE", function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringypVvhJBq4QNz", true))()
 end)
 
+MainSection:NewButton("Shift lock", "NONE", function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/BYc9GHqg", true))()
+end)
+
 MainSection:NewButton("Low Graphick", "NONE", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/RM3vpzEg"))()
 end)
