@@ -1,109 +1,70 @@
-game:GetService("StarterGui"):SetCore("SendNotification",{
-                Title = "#--[CREDITS]--#";
-                Text = "Script Made By Sonic";
-                Duration = math.huge;
-                Button1 = "Okay"
-            })
-            
---Gui
+local notif = loadstring(game:HttpGet("https://pastebin.com/raw/yUJfa0Hx"))()
 
-local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextButton = Instance.new("TextButton")
-local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+notif:Notification("INFORMATION","Script Made By Sonic","GothamSemibold","Gotham",3) -- title: <string> description: <string> title font: <string> description font: <string> notification show time: <number>
+-- notif
+local notif = loadstring(game:HttpGet("https://pastebin.com/raw/yUJfa0Hx"))()
 
---Properties:
+notif:Notification("LOADING","Waiting...","GothamSemibold","Gotham",2) -- title: <string> description: <string> title font: <string> description font: <string> notification show time: <number>
+-- notif2
+local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/cypherdh/VanisUILIB/main/.gitignore'))()
+local Window = library:CreateWindow("Sonic-HUB", "3.0", 10044538000)
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+local Tab = Window:CreateTab("MENU")
+local Page = Tab:CreateFrame("Credits")
 
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
-Frame.BackgroundTransparency = 1
-Frame.Position = UDim2.new(0.858712733, 0, 0.0237762257, 0)
-Frame.Size = UDim2.new(0.1, 0, 0.1, 0)
-
-TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.BackgroundTransparency = 1.000
-TextButton.Size = UDim2.new(1, 0, 1, 0)
-TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "❖"
-TextButton.TextColor3 = Color3.fromRGB(102, 102, 255)
-TextButton.TextScaled = true
-TextButton.TextSize = 20.000
-TextButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-TextButton.TextStrokeTransparency = 0.000
-TextButton.TextWrapped = true
-TextButton.MouseButton1Down:Connect(function()
-	game:GetService("VirtualInputManager"):SendKeyEvent(true, "F6" , false , game)
+TextBox = Page:CreateBox("Script Made By Sonic", 10044538000, function(arg)
+TextBox:UpdateBox("New Title")
+print(arg)
 end)
 
-UITextSizeConstraint.Parent = TextButton
-UITextSizeConstraint.MaxTextSize = 50
-
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/Test.lua"))();
-
-local Window = Library.CreateLib("Sonic HUB | V 2.0", "Ocean")
-
-local Credit = Window:NewTab("CREDIT")
-local CreditSection = Credit:NewSection("Credit")
-
-
-CreditSection:NewButton("Script Made By Sonic", "NONE", function()
-    print("Clicked")
+TextBox = Page:CreateBox("[==================]", 10044538000, function(arg)
+TextBox:UpdateBox("New Title")
+print(arg)
 end)
 
-
-local CreditSection = Credit:NewSection("Game List")
-
-
-CreditSection:NewButton("-- Work All Game", "NONE", function()
-    print("Clicked")
+TextBox = Page:CreateBox("Script Work For All Game", 10044538000, function(arg)
+TextBox:UpdateBox("New Title")
+print(arg)
 end)
 
-local Main = Window:NewTab("COMBAT")
-local MainSection = Main:NewSection("Combat Exploit List")
+local Page = Tab:CreateFrame("Combat")
 
-
-MainSection:NewButton("Hit Box (SMALL) (Invisible)", "NONE", function()
+Button = Page:CreateButton("Hit Box (SMALL) (Invisible)", "NONE", function()
     _G.HeadSize = 20 _G.Disabled = true game:GetService('RunService').RenderStepped:connect(function() if _G.Disabled then for i,v in next, game:GetService('Players'):GetPlayers() do if v.Name ~= game:GetService('Players').LocalPlayer.Name then pcall(function() v.Character.HumanoidRootPart.Size = Vector3.new(20,20,20) v.Character.HumanoidRootPart.Transparency = 1 v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really white") v.Character.HumanoidRootPart.Material = "Neon" v.Character.HumanoidRootPart.CanCollide = false end) end end end end)
 end)
 
-MainSection:NewButton("Hit Box (MEDIUM) (Invisible)", "NONE", function()
+Button = Page:CreateButton("Hit Box (MEDIUM) (Invisible)", "NONE", function()
     _G.HeadSize = 30 _G.Disabled = true game:GetService('RunService').RenderStepped:connect(function() if _G.Disabled then for i,v in next, game:GetService('Players'):GetPlayers() do if v.Name ~= game:GetService('Players').LocalPlayer.Name then pcall(function() v.Character.HumanoidRootPart.Size = Vector3.new(30,30,30) v.Character.HumanoidRootPart.Transparency = 1 v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really white") v.Character.HumanoidRootPart.Material = "Neon" v.Character.HumanoidRootPart.CanCollide = false end) end end end end)
 end)
 
-MainSection:NewButton("Hit Box (LARGE) (Invisible)", "NONE", function()
+Button = Page:CreateButton("Hit Box (LARGE) (Invisible)", "NONE", function()
     _G.HeadSize = 40 _G.Disabled = true game:GetService('RunService').RenderStepped:connect(function() if _G.Disabled then for i,v in next, game:GetService('Players'):GetPlayers() do if v.Name ~= game:GetService('Players').LocalPlayer.Name then pcall(function() v.Character.HumanoidRootPart.Size = Vector3.new(40,40,40) v.Character.HumanoidRootPart.Transparency = 1 v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really white") v.Character.HumanoidRootPart.Material = "Neon" v.Character.HumanoidRootPart.CanCollide = false end) end end end end)
 end)
 
 
-MainSection:NewButton("Kill Aura", "NONE", function()
+Button = Page:CreateButton("Kill Aura", "NONE", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/ibYN5TrH"))()
 end)
 
-MainSection:NewButton("Aimbot Range (300)", "NONE", function()
+Button = Page:CreateButton("Aimbot Range (300)", "NONE", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/PZhxvsme"))()
 end)
 
-MainSection:NewButton("Teleport Player", "NONE", function()
+Button = Page:CreateButton("Teleport Player", "NONE", function()
     loadstring(game:HttpGet("https://gist.githubusercontent.com/DagerFild/b4776075a0d26ef04394133ee6bd2081/raw/0ed51ac94057d2d9a9f00e1b037b9011c76ca54a/tpGUI", true))()
 end)
 
-MainSection:NewButton("Esp Player ( BOX )", "NONE", function()
+Button = Page:CreateButton("Esp Player ( BOX )", "NONE", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/zKjj0TQD"))()
 end)
 
-MainSection:NewButton("Esp Player", "NONE", function()
+Button = Page:CreateButton("Esp Player", "NONE", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/cCCX66GY"))()
 end)
 
-local Main = Window:NewTab("PLAYER")
-local MainSection = Main:NewSection("Player Exploit List")
+local Page = Tab:CreateFrame("Player")
 
-
-MainSection:NewButton("Speed Menu", "NONE", function()
+Button = Page:CreateButton("Speed Menu", "NONE", function()
 
     
 local ScreenGui = Instance.new("ScreenGui")
@@ -268,69 +229,66 @@ coroutine.wrap(ZFFOR_fake_script)()
 end)
 
 
-MainSection:NewButton("Fly Menu", "NONE", function()
-   loadstring(game:HttpGet("https://pastebin.com/raw/85csexBH"))()
+Button = Page:CreateButton("Fly Menu", "NONE", function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/DwGaDGZw"))()
 end)
 
-MainSection:NewButton("Set Spawn + Tp", "NONE", function()
+Button = Page:CreateButton("Set Spawn + Tp", "NONE", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/1dM3mAJq'))()
 end)
 
-MainSection:NewButton("Auto Click", "NONE", function()
+Button = Page:CreateButton("Auto Click", "NONE", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/VxjDiyVr"))()
 end)
 
-MainSection:NewButton("Anti KnockBack", "NONE", function()
+Button = Page:CreateButton("Anti KnockBack", "NONE", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/TrcZKAkh"))()
 end)
 
 
-local Main = Window:NewTab("WORLD")
-local MainSection = Main:NewSection("World Exploit List")
+local Page = Tab:CreateFrame("World")
 
 
-
-MainSection:NewButton("Btools ( NORMAL )", "NONE", function()
+Button = Page:CreateButton("Btools ( NORMAL )", "NONE", function()
     Instance.new("HopperBin", game.Players.LocalPlayer.Backpack).BinType = 4
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
 end)
 
-MainSection:NewButton("Btools ( F3X )", "NONE", function()
+Button = Page:CreateButton("Btools ( F3X )", "NONE", function()
     loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)()
 end)
 
-MainSection:NewButton("Pc Keyboard", "NONE", function()
+Button = Page:CreateButton("Pc Keyboard", "NONE", function()
    loadstring(game:HttpGet(('https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/mob.txt'),true))()
 end)
 
-MainSection:NewButton("Infinity Yield", "NONE", function()
+Button = Page:CreateButton("Infinity Yield", "NONE", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
-local Main = Window:NewTab("MISC")
-local MainSection = Main:NewSection("Misc Exploit List")
+local Page = Tab:CreateFrame("Misc")
 
-MainSection:NewButton("Server Hop", "NONE", function()
+Button = Page:CreateButton("Server Hop", "NONE", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/iySVbDQ2"))()
 end)
 
-MainSection:NewButton("Anti Afk", "NONE", function()
+Button = Page:CreateButton("Anti Afk", "NONE", function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringypVvhJBq4QNz", true))()
 end)
 
-MainSection:NewButton("Shift lock", "NONE", function()
+Button = Page:CreateButton("Shift lock", "NONE", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/BYc9GHqg", true))()
 end)
 
-MainSection:NewButton("Low Graphick", "NONE", function()
+Button = Page:CreateButton("Low Graphick", "NONE", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/RM3vpzEg"))()
 end)
 
-MainSection:NewButton("Graphick RTX", "NONE", function()
+Button = Page:CreateButton("Graphick RTX", "NONE", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/beJhkj3m"))()
 end)
 
-MainSection:NewButton("Anti Void", "NONE", function()
+Button = Page:CreateButton("Anti Void", "NONE", function()
    local baseplate    = Instance.new("Part")
 	baseplate.Parent   = workspace
 	baseplate.Name = "BasePlatform"
@@ -340,14 +298,18 @@ MainSection:NewButton("Anti Void", "NONE", function()
 	baseplate.Position = Workspace.Lobby["Middle Room"].Floor.Base.Union.Position + Vector3.new(0,-110,0)
 end)
 
-MainSection:NewButton("Translate all Language", "NONE", function()
+Button = Page:CreateButton("Translate all Language", "NONE", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/b6Y3GTQG"))()
 end)
 
-local Main = Window:NewTab("OTHER GAME")
-local MainSection = Main:NewSection("[↓↓] FRUIT BETTLEGROUND [↓↓]")
+local Page = Tab:CreateFrame("Other Script")
 
-MainSection:NewButton("Spawn Safe Platform", "NONE", function()
+TextBox = Page:CreateBox("[↓↓] FRUIT BETTLEGROUND [↓↓]", 10044538000, function(arg)
+TextBox:UpdateBox("New Title")
+print(arg)
+end)
+
+Button = Page:CreateButton("Spawn Safe Platform", "NONE", function()
     local baseplate    = Instance.new("Part")
 	baseplate.Parent   = workspace
 	baseplate.Name = "BasePlatform"
@@ -357,39 +319,54 @@ MainSection:NewButton("Spawn Safe Platform", "NONE", function()
 	baseplate.Position = Workspace.Lobby["Middle Room"].Floor.Base.Union.Position + Vector3.new(0,110,0)
 end)
 
-MainSection:NewButton("Auto farm Fruit ( SPAWN PLAT FRIST )", "NONE", function()
+Button = Page:CreateButton("Auto farm Fruit ( SPAWN PLAT FRIST )", "NONE", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/uhZag4tH"))()
 end)
 
-local MainSection = Main:NewSection("[↓↓] BLOX FRUIT [↓↓]")
+TextBox = Page:CreateBox("[↓↓] BLOX FRUIT [↓↓]", 10044538000, function(arg)
+TextBox:UpdateBox("New Title")
+print(arg)
+end)
 
-MainSection:NewButton("Super Fast Attack", "NONE", function()
+Button = Page:CreateButton("Super Fast Attack", "NONE", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/YCFGUmFH"))()
 end)
 
-MainSection:NewButton("Super Fast Attack + auto click", "NONE", function()
+Button = Page:CreateButton("Super Fast Attack + auto click", "NONE", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/0WyG0Sf0"))()
 end)
 
-local MainSection = Main:NewSection("[↓↓] TITANS BETTLEGROUND [↓↓]")
+TextBox = Page:CreateBox("[↓↓] TITANS BETTLEGROUND [↓↓]", 10044538000, function(arg)
+TextBox:UpdateBox("New Title")
+print(arg)
+end)
 
-MainSection:NewButton("No Cooldown ( FLUXUS )", "NONE", function()
+Button = Page:CreateButton("No Cooldown ( FLUXUS )", "NONE", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/HzanLBNs"))()
 end)
 
-MainSection:NewButton("No Cooldown ( HYDROGEN )", "NONE", function()
+Button = Page:CreateButton("No Cooldown ( HYDROGEN )", "NONE", function()
     loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\75\117\69\114\120\115\90\110\10"))()
 end)
 
-local MainSection = Main:NewSection("[↓↓] ABILITY WARS [↓↓]")
+TextBox = Page:CreateBox("[↓↓] ABILITY WARS [↓↓]", 10044538000, function(arg)
+TextBox:UpdateBox("New Title")
+print(arg)
+end)
 
-MainSection:NewButton("Ability Wars Gui", "NONE", function()
+Button = Page:CreateButton("Ability Wars Gui", "NONE", function()
     loadstring(game:HttpGet("https://paste.ee/r/Wo5Kj"))()
 end)
 
-local Tab1 = Window:NewTab("")
-local Section1 = Tab1:NewSection("SECRET TEST TOGGLE")
+Button = Page:CreateButton("TP TO = SECRET MUSHROOM ROOM", "NONE", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-13017.5654296875, 83.53207397460938, -5022.58349609375)
+end)
 
-Section1:NewKeybind("Toggle ui", "Toggle the ui yes", Enum.KeyCode.F6, function()
-    Library:ToggleUI()
+TextBox = Page:CreateBox("[↓↓] SURVIVE THE KILLER [↓↓]", 10044538000, function(arg)
+TextBox:UpdateBox("New Title")
+print(arg)
+end)
+
+Button = Page:CreateButton("COOMING SOON", "NONE", function()
+    print(ok)
 end)
