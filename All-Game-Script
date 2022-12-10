@@ -1,11 +1,15 @@
 local notif = loadstring(game:HttpGet("https://pastebin.com/raw/yUJfa0Hx"))()
 
-notif:Notification("INFORMATION","Script Made By Sonic","GothamSemibold","Gotham",3) -- title: <string> description: <string> title font: <string> description font: <string> notification show time: <number>
--- notif
+notif:Notification("LOADING","Waiting...","GothamSemibold","Gotham",2) -- title: <string> description: <string> title font: <string> description font: <string> notification show time: <number>
+-- NOTIF 1
 local notif = loadstring(game:HttpGet("https://pastebin.com/raw/yUJfa0Hx"))()
 
-notif:Notification("LOADING","Waiting...","GothamSemibold","Gotham",2) -- title: <string> description: <string> title font: <string> description font: <string> notification show time: <number>
--- notif2
+notif:Notification("INFORMATION","Script Made By Sonic","GothamSemibold","Gotham",3) -- title: <string> description: <string> title font: <string> description font: <string> notification show time: <number>
+-- NOTIF 2
+local notif = loadstring(game:HttpGet("https://pastebin.com/raw/yUJfa0Hx"))()
+
+notif:Notification("COMPLITE","Enjoy The Script","GothamSemibold","Gotham",2) -- title: <string> description: <string> title font: <string> description font: <string> notification show time: <number>
+-- GUI
 local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/cypherdh/VanisUILIB/main/.gitignore'))()
 local Window = library:CreateWindow("Sonic-HUB", "3.0", 10044538000)
 
@@ -41,25 +45,32 @@ Button = Page:CreateButton("Hit Box (LARGE) (Invisible)", "NONE", function()
     _G.HeadSize = 40 _G.Disabled = true game:GetService('RunService').RenderStepped:connect(function() if _G.Disabled then for i,v in next, game:GetService('Players'):GetPlayers() do if v.Name ~= game:GetService('Players').LocalPlayer.Name then pcall(function() v.Character.HumanoidRootPart.Size = Vector3.new(40,40,40) v.Character.HumanoidRootPart.Transparency = 1 v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really white") v.Character.HumanoidRootPart.Material = "Neon" v.Character.HumanoidRootPart.CanCollide = false end) end end end end)
 end)
 
-
-Button = Page:CreateButton("Kill Aura", "NONE", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/ibYN5TrH"))()
-end)
-
 Button = Page:CreateButton("Aimbot Range (300)", "NONE", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/PZhxvsme"))()
 end)
 
-Button = Page:CreateButton("Teleport Player", "NONE", function()
-    loadstring(game:HttpGet("https://gist.githubusercontent.com/DagerFild/b4776075a0d26ef04394133ee6bd2081/raw/0ed51ac94057d2d9a9f00e1b037b9011c76ca54a/tpGUI", true))()
+Button = Page:CreateButton("Aimbot Range (400)", "NONE", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/JAjX0fVr"))()
+end)
+
+Button = Page:CreateButton("Aimbot Range (500)", "NONE", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/ZdbUNK66"))()
 end)
 
 Button = Page:CreateButton("Esp Player ( BOX )", "NONE", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/zKjj0TQD"))()
 end)
 
-Button = Page:CreateButton("Esp Player", "NONE", function()
+Button = Page:CreateButton("Esp Player ( BODY )", "NONE", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/cCCX66GY"))()
+end)
+
+Button = Page:CreateButton("Kill Aura", "NONE", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/ibYN5TrH"))()
+end)
+
+Button = Page:CreateButton("Teleport Player", "NONE", function()
+    loadstring(game:HttpGet("https://gist.githubusercontent.com/DagerFild/b4776075a0d26ef04394133ee6bd2081/raw/0ed51ac94057d2d9a9f00e1b037b9011c76ca54a/tpGUI", true))()
 end)
 
 local Page = Tab:CreateFrame("Player")
@@ -230,7 +241,7 @@ end)
 
 
 Button = Page:CreateButton("Fly Menu", "NONE", function()
-   loadstring(game:HttpGet("https://pastebin.com/raw/DwGaDGZw"))()
+   loadstring(game:HttpGet("https://pastebin.com/raw/WrrG9tkf"))()
 end)
 
 Button = Page:CreateButton("Set Spawn + Tp", "NONE", function()
@@ -323,19 +334,6 @@ Button = Page:CreateButton("Auto farm Fruit ( SPAWN PLAT FRIST )", "NONE", funct
     loadstring(game:HttpGet("https://pastebin.com/raw/uhZag4tH"))()
 end)
 
-TextBox = Page:CreateBox("[↓↓] BLOX FRUIT [↓↓]", 10044538000, function(arg)
-TextBox:UpdateBox("New Title")
-print(arg)
-end)
-
-Button = Page:CreateButton("Super Fast Attack", "NONE", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/YCFGUmFH"))()
-end)
-
-Button = Page:CreateButton("Super Fast Attack + auto click", "NONE", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/0WyG0Sf0"))()
-end)
-
 TextBox = Page:CreateBox("[↓↓] TITANS BETTLEGROUND [↓↓]", 10044538000, function(arg)
 TextBox:UpdateBox("New Title")
 print(arg)
@@ -369,4 +367,72 @@ end)
 
 Button = Page:CreateButton("COOMING SOON", "NONE", function()
     print(ok)
+end)
+
+local Page = Tab:CreateFrame("King Legacy")
+
+Button = Page:CreateButton("Gui King Legacy", "NONE", function()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
+end)
+
+Button = Page:CreateButton("BY-PASS TP > floresco 1", "NONE", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3641.9384765625, 57.334808349609375, 170.16880798339844)
+end)
+
+Button = Page:CreateButton("BY-PASS TP > floresco 2", "NONE", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4755.2958984375, 57.337833404541016, 109.77266693115234)
+end)
+
+Button = Page:CreateButton("BY-PASS TP > viridans", "NONE", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5126.93701171875, 57.3348388671875, 1858.7130126953125)
+end)
+
+Button = Page:CreateButton("BY-PASS TP > torrefacio", "NONE", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5206.8486328125, 57.284793853759766, 800.2947387695312)
+end)
+
+Button = Page:CreateButton("BY-PASS TP > soldier headquater", "NONE", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9617.6064453125, 39.19536209106445, 807.9238891601562)
+end)
+
+Button = Page:CreateButton("BY-PASS TP > pirate skull island", "NONE", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9208.6953125, 68.27733612060547, -5145.04736328125)
+end)
+
+Button = Page:CreateButton("BY-PASS TP > ice island", "NONE", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-205.19203186035156, 86.98753356933594, -2567.59814453125)
+end)
+
+Button = Page:CreateButton("BY-PASS TP > magma island", "NONE", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-10.982187271118164, 112.0208740234375, -3360.09130859375)
+end)
+
+Button = Page:CreateButton("BY-PASS TP > dead thundra", "NONE", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1070.6502685546875, 14.385601043701172, 921.5740356445312)
+end)
+
+Button = Page:CreateButton("BY-PASS TP > loaf island", "NONE", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-789.46630859375, 39.44408416748047, 7444.76904296875)
+end)
+
+Button = Page:CreateButton("BY-PASS TP > skull island", "NONE", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6519.35888671875, 57.752288818359375, 5880.3720703125)
+end)
+
+local Page = Tab:CreateFrame("Blox Fruit")
+
+Button = Page:CreateButton("NevaHub Gui", "NONE", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/VEZ2/NEVAHUB/main/2'))()
+end)
+
+Button = Page:CreateButton("HohoHub Gui", "NONE", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+end)
+
+Button = Page:CreateButton("Super Fast Attack", "NONE", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/YCFGUmFH"))()
+end)
+
+Button = Page:CreateButton("Super Fast Attack + auto click", "NONE", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/0WyG0Sf0"))()
 end)
