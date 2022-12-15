@@ -365,8 +365,65 @@ TextBox:UpdateBox("New Title")
 print(arg)
 end)
 
-Button = Page:CreateButton("COOMING SOON", "NONE", function()
-    print(ok)
+Button = Page:CreateButton("Eltoro Gui", "NONE", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/FOXTROXHACKS/ElToro/main/Hub.lua"))()
+end)
+
+TextBox = Page:CreateBox("[↓↓] LEGEND OF SPEED [↓↓]", 10044538000, function(arg)
+TextBox:UpdateBox("New Title")
+print(arg)
+end)
+
+Button = Page:CreateButton("Farm Gui", "NONE", function()
+    notif:Notification("INFORMATION","Script Made By Sonic","GothamSemibold","Gotham",2) -- title: <string> description: <string> title font: <string> description font: <string> notification show time: <number>
+local notif = loadstring(game:HttpGet("https://pastebin.com/raw/yUJfa0Hx"))()
+wait(0.1)
+local library = loadstring(game:HttpGet("https://pastebin.com/raw/egMXJcwB", true))()
+library.options.underlinecolor = "rainbow"
+
+local w = library:CreateWindow('List')
+w:Section('Script Made By Sonic')
+local t = w:Toggle('Auto Rebirth', {flag = "Rebirth"})
+spawn( 
+    function()
+        while wait() do
+            if w.flags.Rebirth then
+                game:GetService("ReplicatedStorage").rEvents.rebirthEvent:FireServer("rebirthRequest")
+            end
+        end
+    end
+)
+
+local t = w:Toggle('Farm 1', {flag = "Farm1"})
+spawn( 
+    function()
+        while wait() do
+            if w.flags.Farm1 then
+                for i,v in pairs(game:GetService("Workspace").Hoops:GetChildren()) do
+				firetouchinterest(v, game:GetService('Players').LocalPlayer.Character.HumanoidRootPart, 0)
+				wait()
+				firetouchinterest(v, game:GetService('Players').LocalPlayer.Character.HumanoidRootPart, 1)
+				end
+            end
+        end
+    end
+)
+
+local t = w:Toggle('Farm 2', {flag = "Farm2"})
+spawn( 
+    function()
+        while wait() do
+            if w.flags.Farm2 then
+                local children = workspace.Hoops:GetChildren()
+                    for i, child in ipairs(children) do
+                        if child.Name == "Hoop" then
+                        child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+                    end    
+                end
+            end
+        end
+    end
+)
 end)
 
 local Page = Tab:CreateFrame("King Legacy")
