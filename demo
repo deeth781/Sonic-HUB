@@ -4,7 +4,7 @@ local Notify = AkaliNotif.Notify;
 wait(1);
 
 Notify({
-Description = "Look The Information First";
+Description = "Đang tải sciprt";
 Title = "LOADING...";
 Duration = 3;
 });
@@ -12,28 +12,28 @@ Duration = 3;
 wait(2);
 
 Notify({
-Description = "Script Full Made By Sonic";
-Title = "INFORMATION";
+Description = "Script Full Made By VT";
+Title = "Hoàn Thành";
 Duration = 4;
 });
 
 wait(3);
 
 Notify({
-Description = "Enjoy The Script. Thanks For Use";
-Title = "DONE...";
+Description = "sciprt vào thành công.cảm ơn bạn đã sử dụng sciprt của VT";
+Title = "thành công ";
 Duration = 3;
 });
 
 wait(2);
 -- GUI
 local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/cypherdh/VanisUILIB/main/.gitignore'))()
-local Window = library:CreateWindow("Sonic-HUB", "3.0", 10044538000)
+local Window = library:CreateWindow("VT-HUB", "3.0", 10044538000)
 
-local Tab = Window:CreateTab("MENU")
-local Page = Tab:CreateFrame("Credits")
+local Tab = Window:CreateTab("Chức năng")
+local Page = Tab:CreateFrame("Fb")
 
-TextBox = Page:CreateBox("Script Made By Sonic", 10044538000, function(arg)
+TextBox = Page:CreateBox("Script Made By VT", 10044538000, function(arg)
 TextBox:UpdateBox("New Title")
 print(arg)
 end)
@@ -43,27 +43,27 @@ TextBox:UpdateBox("New Title")
 print(arg)
 end)
 
-TextBox = Page:CreateBox("Script Work For All Game", 10044538000, function(arg)
+TextBox = Page:CreateBox("Script hoạt động tất cả các game", 10044538000, function(arg)
 TextBox:UpdateBox("New Title")
 print(arg)
 end)
 
-local Page = Tab:CreateFrame("Combat")
+local Page = Tab:CreateFrame("Chiến đấu")
 
 TextBox = Page:CreateBox("[----------[ ///////////////////////////// ]---------]", 10044538000, function(arg)
 TextBox:UpdateBox("New Title")
 print(arg)
 end)
 
-Button = Page:CreateButton("Hit Box (SMALL)", "NONE", function()
+Button = Page:CreateButton("Vùng tấn công nhỏ)", "NONE", function()
     _G.HeadSize = 20 _G.Disabled = true game:GetService('RunService').RenderStepped:connect(function() if _G.Disabled then for i,v in next, game:GetService('Players'):GetPlayers() do if v.Name ~= game:GetService('Players').LocalPlayer.Name then pcall(function() v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize) v.Character.HumanoidRootPart.Transparency = 0.9 v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really white") v.Character.HumanoidRootPart.Material = "Neon" v.Character.HumanoidRootPart.CanCollide = false end) end end end end)
 end)
 
-Button = Page:CreateButton("Hit Box (MEDIUM)", "NONE", function()
+Button = Page:CreateButton("Vùng tấn công to", "NONE", function()
     _G.HeadSize = 30 _G.Disabled = true game:GetService('RunService').RenderStepped:connect(function() if _G.Disabled then for i,v in next, game:GetService('Players'):GetPlayers() do if v.Name ~= game:GetService('Players').LocalPlayer.Name then pcall(function() v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize) v.Character.HumanoidRootPart.Transparency = 0.9 v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really white") v.Character.HumanoidRootPart.Material = "Neon" v.Character.HumanoidRootPart.CanCollide = false end) end end end end)
 end)
 
-Button = Page:CreateButton("Hit Box (LARGE)", "NONE", function()
+Button = Page:CreateButton("Vùng tấn công lớn", "NONE", function()
     _G.HeadSize = 40 _G.Disabled = true game:GetService('RunService').RenderStepped:connect(function() if _G.Disabled then for i,v in next, game:GetService('Players'):GetPlayers() do if v.Name ~= game:GetService('Players').LocalPlayer.Name then pcall(function() v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize) v.Character.HumanoidRootPart.Transparency = 0.9 v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really white") v.Character.HumanoidRootPart.Material = "Neon" v.Character.HumanoidRootPart.CanCollide = false end) end end end end)
 end)
 
@@ -72,15 +72,15 @@ TextBox:UpdateBox("New Title")
 print(arg)
 end)
 
-Button = Page:CreateButton("Aimbot Range (300)", "NONE", function()
+Button = Page:CreateButton("Aimbot gần ", "NONE", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/PZhxvsme"))()
 end)
 
-Button = Page:CreateButton("Aimbot Range (400)", "NONE", function()
+Button = Page:CreateButton("Aimbot hơi xa  (400)", "NONE", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/JAjX0fVr"))()
 end)
 
-Button = Page:CreateButton("Aimbot Range (500)", "NONE", function()
+Button = Page:CreateButton("Aimbot siêu xa (500)", "NONE", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/ZdbUNK66"))()
 end)
 
@@ -89,11 +89,11 @@ TextBox:UpdateBox("New Title")
 print(arg)
 end)
 
-Button = Page:CreateButton("Esp Player ( BOX )", "NONE", function()
+Button = Page:CreateButton("định vị người chơi", "NONE", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/zKjj0TQD"))()
 end)
 
-Button = Page:CreateButton("Esp Player ( BODY )", "NONE", function()
+Button = Page:CreateButton("Esp người chơi body", "NONE", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/cCCX66GY"))()
 end)
 
@@ -102,11 +102,11 @@ TextBox:UpdateBox("New Title")
 print(arg)
 end)
 
-Button = Page:CreateButton("Kill Aura", "NONE", function()
+Button = Page:CreateButton("giết tất cả", "NONE", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/ibYN5TrH"))()
 end)
 
-Button = Page:CreateButton("Teleport Player", "NONE", function()
+Button = Page:CreateButton("dịch chuyển đến người chơi", "NONE", function()
     loadstring(game:HttpGet("https://gist.githubusercontent.com/DagerFild/b4776075a0d26ef04394133ee6bd2081/raw/0ed51ac94057d2d9a9f00e1b037b9011c76ca54a/tpGUI", true))()
 end)
 
@@ -115,18 +115,18 @@ TextBox:UpdateBox("New Title")
 print(arg)
 end)
 
-Button = Page:CreateButton("Anti KnockBack", "NONE", function()
+Button = Page:CreateButton("chống kick ra khỏi sever (test)", "NONE", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/TrcZKAkh"))()
 end)
 
-local Page = Tab:CreateFrame("Player")
+local Page = Tab:CreateFrame("người chơi")
 
 TextBox = Page:CreateBox("[----------[ ///////////////////////////// ]---------]", 10044538000, function(arg)
 TextBox:UpdateBox("New Title")
 print(arg)
 end)
 
-Button = Page:CreateButton("Speed Menu", "NONE", function()
+Button = Page:CreateButton("Menu tốc độ chạy", "NONE", function()
 
     
 local ScreenGui = Instance.new("ScreenGui")
@@ -291,7 +291,7 @@ coroutine.wrap(ZFFOR_fake_script)()
 end)
 
 
-Button = Page:CreateButton("Fly Menu", "NONE", function()
+Button = Page:CreateButton("Menu Fly", "NONE", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/WrrG9tkf"))()
 end)
 
@@ -300,7 +300,7 @@ TextBox:UpdateBox("New Title")
 print(arg)
 end)
 
-Button = Page:CreateButton("Set Spawn + Tp", "NONE", function()
+Button = Page:CreateButton("đặt điểm hồi sinh + Tp", "NONE", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/1dM3mAJq'))()
 end)
 
@@ -309,12 +309,12 @@ TextBox:UpdateBox("New Title")
 print(arg)
 end)
 
-Button = Page:CreateButton("Auto Click", "NONE", function()
+Button = Page:CreateButton("tự động  click", "NONE", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/VxjDiyVr"))()
 end)
 
 
-local Page = Tab:CreateFrame("World")
+local Page = Tab:CreateFrame("thế giới")
 
 TextBox = Page:CreateBox("[----------[ ///////////////////////////// ]---------]", 10044538000, function(arg)
 TextBox:UpdateBox("New Title")
@@ -335,7 +335,7 @@ TextBox:UpdateBox("New Title")
 print(arg)
 end)
 
-Button = Page:CreateButton("Pc Keyboard", "NONE", function()
+Button = Page:CreateButton("bàn phím pc", "NONE", function()
    loadstring(game:HttpGet(('https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/mob.txt'),true))()
 end)
 
@@ -344,22 +344,22 @@ TextBox:UpdateBox("New Title")
 print(arg)
 end)
 
-Button = Page:CreateButton("Infinity Yield", "NONE", function()
+Button = Page:CreateButton("vô hạng năng lượng", "NONE", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
-local Page = Tab:CreateFrame("Misc")
+local Page = Tab:CreateFrame("Khác")
 
 TextBox = Page:CreateBox("[----------[ ///////////////////////////// ]---------]", 10044538000, function(arg)
 TextBox:UpdateBox("New Title")
 print(arg)
 end)
 
-Button = Page:CreateButton("Server Hop", "NONE", function()
+Button = Page:CreateButton("Sever Hop", "NONE", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/iySVbDQ2"))()
 end)
 
-Button = Page:CreateButton("Re-join", "NONE", function()
+Button = Page:CreateButton("GIA NHẬP SEVER", "NONE", function()
    game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
 end)
 
@@ -368,7 +368,7 @@ TextBox:UpdateBox("New Title")
 print(arg)
 end)
 
-Button = Page:CreateButton("Anti Afk", "NONE", function()
+Button = Page:CreateButton("chống afk", "NONE", function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringypVvhJBq4QNz", true))()
 end)
 
@@ -386,11 +386,11 @@ TextBox:UpdateBox("New Title")
 print(arg)
 end)
 
-Button = Page:CreateButton("Low Graphick", "NONE", function()
+Button = Page:CreateButton("TRong suốt", "NONE", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/RM3vpzEg"))()
 end)
 
-Button = Page:CreateButton("Graphick RTX", "NONE", function()
+Button = Page:CreateButton("đồ họa trong suốt", "NONE", function()
    loadstring(game:HttpGet("https://pastebin.com/raw/beJhkj3m"))()
 end)
 
@@ -399,7 +399,7 @@ TextBox:UpdateBox("New Title")
 print(arg)
 end)
 
-Button = Page:CreateButton("Anti Void", "NONE", function()
+Button = Page:CreateButton("Anti void", "NONE", function()
    local baseplate    = Instance.new("Part")
 	baseplate.Parent   = workspace
 	baseplate.Name = "BasePlatform"
@@ -414,18 +414,18 @@ TextBox:UpdateBox("New Title")
 print(arg)
 end)
 
-Button = Page:CreateButton("Translate all Language", "NONE", function()
+Button = Page:CreateButton("Dịch mọi ngôn ngữ", "NONE", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/b6Y3GTQG"))()
 end)
 
-local Page = Tab:CreateFrame("Other Script")
+local Page = Tab:CreateFrame("Một số sciprt")
 
 TextBox = Page:CreateBox("[↓↓] FRUIT BETTLEGROUND [↓↓]", 10044538000, function(arg)
 TextBox:UpdateBox("New Title")
 print(arg)
 end)
 
-Button = Page:CreateButton("Spawn Safe Platform", "NONE", function()
+Button = Page:CreateButton("hồi sinh ở vùng an toàn", "NONE", function()
     local baseplate    = Instance.new("Part")
 	baseplate.Parent   = workspace
 	baseplate.Name = "BasePlatform"
@@ -435,7 +435,7 @@ Button = Page:CreateButton("Spawn Safe Platform", "NONE", function()
 	baseplate.Position = Workspace.Lobby["Middle Room"].Floor.Base.Union.Position + Vector3.new(0,110,0)
 end)
 
-Button = Page:CreateButton("Auto farm Fruit ( SPAWN PLAT FRIST )", "NONE", function()
+Button = Page:CreateButton("tự động nhặt trái ác quỷ", "NONE", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/uhZag4tH"))()
 end)
 
@@ -444,11 +444,11 @@ TextBox:UpdateBox("New Title")
 print(arg)
 end)
 
-Button = Page:CreateButton("No Cooldown ( FLUXUS )", "NONE", function()
+Button = Page:CreateButton("KO trọng lực ( FLUXUS )", "NONE", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/HzanLBNs"))()
 end)
 
-Button = Page:CreateButton("No Cooldown ( HYDROGEN )", "NONE", function()
+Button = Page:CreateButton("Ko trọng lực ( HYDROGEN )", "NONE", function()
     loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\75\117\69\114\120\115\90\110\10"))()
 end)
 
@@ -480,14 +480,15 @@ print(arg)
 end)
 
 Button = Page:CreateButton("Farm Gui", "NONE", function()
-    notif:Notification("INFORMATION","Script Made By Sonic","GothamSemibold","Gotham",2) -- title: <string> description: <string> title font: <string> description font: <string> notification show time: <number>
+    notif:Notification("INFORMATION","Script Made By VT",2) -- title: <string> description: <string> title font: <string> description font: <string> notification show time: <number>
 local notif = loadstring(game:HttpGet("https://pastebin.com/raw/yUJfa0Hx"))()
 wait(0.1)
 local library = loadstring(game:HttpGet("https://pastebin.com/raw/egMXJcwB", true))()
-library.options.underlinecolor = "rainbow"
+library.options.underlinecolor = "Cầu Vông"
+
 
 local w = library:CreateWindow('List')
-w:Section('Script Made By Sonic')
+w:Section('Script Made By VT')
 local t = w:Toggle('Auto Rebirth', {flag = "Rebirth"})
 spawn( 
     function()
@@ -538,7 +539,7 @@ TextBox:UpdateBox("New Title")
 print(arg)
 end)
 
-Button = Page:CreateButton("Gui King Legacy", "NONE", function()
+Button = Page:CreateButton("sciprt King Legacy", "NONE", function()
     loadstring(game:HttpGet"https://raw.githubusercontent.com/xQuartyx/DonateMe/main/ScriptLoader")()
 end)
 
@@ -547,47 +548,47 @@ TextBox:UpdateBox("New Title")
 print(arg)
 end)
 
-Button = Page:CreateButton("BY-PASS TP > floresco 1", "NONE", function()
+Button = Page:CreateButton("Dịch chuyển an toàn > floresco 1", "NONE", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3641.9384765625, 57.334808349609375, 170.16880798339844)
 end)
 
-Button = Page:CreateButton("BY-PASS TP > floresco 2", "NONE", function()
+Button = Page:CreateButton("Dịch chuyển an toàn đến > floresco 2", "NONE", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4755.2958984375, 57.337833404541016, 109.77266693115234)
 end)
 
-Button = Page:CreateButton("BY-PASS TP > viridans", "NONE", function()
+Button = Page:CreateButton("Dịch chuyển an toàn đến > viridans", "NONE", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5126.93701171875, 57.3348388671875, 1858.7130126953125)
 end)
 
-Button = Page:CreateButton("BY-PASS TP > torrefacio", "NONE", function()
+Button = Page:CreateButton("Dịch chuyển an toàn đến > torrefacio", "NONE", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5206.8486328125, 57.284793853759766, 800.2947387695312)
 end)
 
-Button = Page:CreateButton("BY-PASS TP > soldier headquater", "NONE", function()
+Button = Page:CreateButton("Dịch chuyển an toàn đến > soladier hedquater", "NONE", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9617.6064453125, 39.19536209106445, 807.9238891601562)
 end)
 
-Button = Page:CreateButton("BY-PASS TP > pirate skull island", "NONE", function()
+Button = Page:CreateButton("Dịch chuyển an toàn đến > pirate skull island", "NONE", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-9208.6953125, 68.27733612060547, -5145.04736328125)
 end)
 
-Button = Page:CreateButton("BY-PASS TP > ice island", "NONE", function()
+Button = Page:CreateButton("Dịch Chuyển an toàn đến > ice island", "NONE", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-205.19203186035156, 86.98753356933594, -2567.59814453125)
 end)
 
-Button = Page:CreateButton("BY-PASS TP > magma island", "NONE", function()
+Button = Page:CreateButton("Dịch chuyển an toàn đến > magma island", "NONE", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-10.982187271118164, 112.0208740234375, -3360.09130859375)
 end)
 
-Button = Page:CreateButton("BY-PASS TP > dead thundra", "NONE", function()
+Button = Page:CreateButton("Dịch chuyển an toàn đến > dead thundra", "NONE", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1070.6502685546875, 14.385601043701172, 921.5740356445312)
 end)
 
-Button = Page:CreateButton("BY-PASS TP > loaf island", "NONE", function()
+Button = Page:CreateButton("Dịch chuyển an toàn đến", "NONE", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-789.46630859375, 39.44408416748047, 7444.76904296875)
 end)
 
-Button = Page:CreateButton("BY-PASS TP > skull island", "NONE", function()
+Button = Page:CreateButton("Dịch chuyển an toàn đến > skull island", "NONE", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6519.35888671875, 57.752288818359375, 5880.3720703125)
 end)
 
@@ -598,11 +599,11 @@ TextBox:UpdateBox("New Title")
 print(arg)
 end)
 
-Button = Page:CreateButton("NevaHub Gui", "NONE", function()
+Button = Page:CreateButton("Sciprt NevaHub", "NONE", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/VEZ2/NEVAHUB/main/2'))()
 end)
 
-Button = Page:CreateButton("HohoHub Gui", "NONE", function()
+Button = Page:CreateButton("Sciprt HohoHub ", "NONE", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
 end)
 
@@ -611,7 +612,7 @@ TextBox:UpdateBox("New Title")
 print(arg)
 end)
 
-Button = Page:CreateButton("Tp Fruit Spawn + Hop", "NONE", function()
+Button = Page:CreateButton("Dịch chuyển đến trái ác quỷ + Hop", "NONE", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/RHCj6rmd'))()
 end)
 
@@ -620,10 +621,10 @@ TextBox:UpdateBox("New Title")
 print(arg)
 end)
 
-Button = Page:CreateButton("Super Fast Attack", "NONE", function()
+Button = Page:CreateButton("Đấm siêu nhanh", "NONE", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/YCFGUmFH"))()
 end)
 
-Button = Page:CreateButton("Super Fast Attack + auto click", "NONE", function()
+Button = Page:CreateButton("Đấm siêu nhanh + tự động bấm", "NONE", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/0WyG0Sf0"))()
 end)
